@@ -26,7 +26,7 @@ python run_experiments.py
 
 每个文件末尾都带有题目给定用例的自检，运行后应看到“测试通过”。
 
-`run_experiments.py` 会额外运行对照实验，并在控制台打印 Markdown 表格。
+`run_experiments.py` 运行对照实验，并在控制台打印 Markdown 表格。
 结果文件保存在 `results/`：
 
 - `experiment_results.json`：全部实验数据
@@ -36,7 +36,7 @@ python run_experiments.py
 - `alpha_beta_results.csv`：题目三 Minimax vs Alpha-Beta
 - `treasure_results.csv`：题目四不同深度/访问顺序
 - `distance_matrix.csv`：题目四 6×6 距离矩阵
-- `experiment_tables.md`：控制台 Markdown 表格汇总，可直接粘贴到报告
+- `experiment_tables.md`：控制台 Markdown 表格汇总
 
 ## 给定用例的预期结果
 
@@ -74,7 +74,7 @@ python run_experiments.py
 - `TreeNode` 的叶子节点有 `value`，内部节点有 `children`。
 - 根节点按 MAX 层处理，递归时 MAX/MIN 交替。
 - `minimax` 是不剪枝的基线；`alpha_beta` 在 MAX 层更新 `alpha`、MIN 层更新 `beta`，当 `alpha >= beta` 时剪枝。
-- 两个函数都支持传入 `stats` 字典，记录访问节点数、叶子评估数和剪枝数，便于报告对比。
+- 两个函数都支持传入 `stats` 字典，记录访问节点数、叶子评估数和剪枝数。
 
 ### 题目四
 
