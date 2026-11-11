@@ -1,0 +1,12 @@
+# 报告文件（不纳入版本控制）
+report.md
+report.pdf
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# 系统文件
+.DS_Store

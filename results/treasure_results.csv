@@ -1,0 +1,13 @@
+﻿order,depth,algorithm,best_target,best_value,visited,leaf_evals,prunes,pruned_children,time_ms
+T1→T2→T3→T4,2,Minimax,T2,-1,17,12,0,0,0.0176
+T1→T2→T3→T4,2,Alpha-Beta,T2,-1,13,8,2,4,0.0175
+T1→T2→T3→T4,4,Minimax,T3,3,65,24,0,0,0.0757
+T1→T2→T3→T4,4,Alpha-Beta,T3,3,47,16,5,6,0.0599
+T4→T3→T2→T1,2,Minimax,T2,-1,17,12,0,0,0.0188
+T4→T3→T2→T1,2,Alpha-Beta,T2,-1,16,11,1,1,0.0206
+T4→T3→T2→T1,4,Minimax,T3,3,65,24,0,0,0.0763
+T4→T3→T2→T1,4,Alpha-Beta,T3,3,46,16,4,5,0.0605
+价值优先 T1→T3→T4→T2,2,Minimax,T2,-1,17,12,0,0,0.0198
+价值优先 T1→T3→T4→T2,2,Alpha-Beta,T2,-1,15,10,1,2,0.0184
+价值优先 T1→T3→T4→T2,4,Minimax,T3,3,65,24,0,0,0.0758
+价值优先 T1→T3→T4→T2,4,Alpha-Beta,T3,3,42,14,6,7,0.0565

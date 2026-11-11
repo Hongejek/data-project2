@@ -1,0 +1,454 @@
+{
+  "meta": {
+    "python": "3.12.10",
+    "generated_at": "2026-11-11T12:11:11",
+    "time_note": "time_ms 为多次运行的最小平均值，节点数等确定性指标以 stats 为准"
+  },
+  "maze": [
+    {
+      "map": "题目给定地图 5×5",
+      "heuristic": "曼哈顿",
+      "path_len": 7,
+      "expanded": 14,
+      "generated": 15,
+      "max_open": 3,
+      "time_ms": 0.0149
+    },
+    {
+      "map": "题目给定地图 5×5",
+      "heuristic": "h=0 (Dijkstra)",
+      "path_len": 7,
+      "expanded": 16,
+      "generated": 16,
+      "max_open": 3,
+      "time_ms": 0.0148
+    },
+    {
+      "map": "带墙地图 15×15",
+      "heuristic": "曼哈顿",
+      "path_len": 28,
+      "expanded": 162,
+      "generated": 168,
+      "max_open": 14,
+      "time_ms": 0.202
+    },
+    {
+      "map": "带墙地图 15×15",
+      "heuristic": "h=0 (Dijkstra)",
+      "path_len": 28,
+      "expanded": 211,
+      "generated": 210,
+      "max_open": 14,
+      "time_ms": 0.2529
+    }
+  ],
+  "weighted": [
+    {
+      "map": "题目给定地图 5×5",
+      "heuristic": "安全启发",
+      "cost": 7,
+      "path_len": 8,
+      "expanded": 11,
+      "generated": 18,
+      "max_open": 9,
+      "time_ms": 0.0269
+    },
+    {
+      "map": "题目给定地图 5×5",
+      "heuristic": "h=0 (Dijkstra)",
+      "cost": 7,
+      "path_len": 8,
+      "expanded": 15,
+      "generated": 23,
+      "max_open": 10,
+      "time_ms": 0.0306
+    },
+    {
+      "map": "随机加权地图 12×12",
+      "heuristic": "安全启发",
+      "cost": 21,
+      "path_len": 22,
+      "expanded": 32,
+      "generated": 48,
+      "max_open": 18,
+      "time_ms": 0.0763
+    },
+    {
+      "map": "随机加权地图 12×12",
+      "heuristic": "h=0 (Dijkstra)",
+      "cost": 21,
+      "path_len": 22,
+      "expanded": 70,
+      "generated": 84,
+      "max_open": 16,
+      "time_ms": 0.1107
+    }
+  ],
+  "weighted_path_breakdown": [
+    {
+      "step": 0,
+      "position": "(0, 0)",
+      "cell": "S",
+      "enter_cost": 0,
+      "cumulative_cost": 0
+    },
+    {
+      "step": 1,
+      "position": "(1, 0)",
+      "cell": "1",
+      "enter_cost": 1,
+      "cumulative_cost": 1
+    },
+    {
+      "step": 2,
+      "position": "(2, 0)",
+      "cell": "1",
+      "enter_cost": 1,
+      "cumulative_cost": 2
+    },
+    {
+      "step": 3,
+      "position": "(3, 0)",
+      "cell": "1",
+      "enter_cost": 1,
+      "cumulative_cost": 3
+    },
+    {
+      "step": 4,
+      "position": "(3, 1)",
+      "cell": "1",
+      "enter_cost": 1,
+      "cumulative_cost": 4
+    },
+    {
+      "step": 5,
+      "position": "(3, 2)",
+      "cell": "1",
+      "enter_cost": 1,
+      "cumulative_cost": 5
+    },
+    {
+      "step": 6,
+      "position": "(4, 2)",
+      "cell": "1",
+      "enter_cost": 1,
+      "cumulative_cost": 6
+    },
+    {
+      "step": 7,
+      "position": "(4, 3)",
+      "cell": "1",
+      "enter_cost": 1,
+      "cumulative_cost": 7
+    },
+    {
+      "step": 8,
+      "position": "(4, 4)",
+      "cell": "E",
+      "enter_cost": 0,
+      "cumulative_cost": 7
+    }
+  ],
+  "alpha_beta": [
+    {
+      "tree": "题目示例树",
+      "order": "从左到右",
+      "algorithm": "Minimax",
+      "best_value": 5,
+      "visited": 15,
+      "leaf_evals": 8,
+      "prunes": 0,
+      "pruned_children": 0,
+      "time_ms": 0.0014
+    },
+    {
+      "tree": "题目示例树",
+      "order": "从左到右",
+      "algorithm": "Alpha-Beta",
+      "best_value": 5,
+      "visited": 14,
+      "leaf_evals": 7,
+      "prunes": 1,
+      "pruned_children": 1,
+      "time_ms": 0.0033
+    },
+    {
+      "tree": "题目示例树",
+      "order": "从右到左",
+      "algorithm": "Minimax",
+      "best_value": 5,
+      "visited": 15,
+      "leaf_evals": 8,
+      "prunes": 0,
+      "pruned_children": 0,
+      "time_ms": 0.0014
+    },
+    {
+      "tree": "题目示例树",
+      "order": "从右到左",
+      "algorithm": "Alpha-Beta",
+      "best_value": 5,
+      "visited": 14,
+      "leaf_evals": 7,
+      "prunes": 1,
+      "pruned_children": 1,
+      "time_ms": 0.0031
+    },
+    {
+      "tree": "宽树 4×4×2",
+      "order": "从左到右",
+      "algorithm": "Minimax",
+      "best_value": 94,
+      "visited": 53,
+      "leaf_evals": 32,
+      "prunes": 0,
+      "pruned_children": 0,
+      "time_ms": 0.0045
+    },
+    {
+      "tree": "宽树 4×4×2",
+      "order": "从左到右",
+      "algorithm": "Alpha-Beta",
+      "best_value": 94,
+      "visited": 26,
+      "leaf_evals": 14,
+      "prunes": 3,
+      "pruned_children": 9,
+      "time_ms": 0.0062
+    },
+    {
+      "tree": "宽树 4×4×2",
+      "order": "从右到左",
+      "algorithm": "Minimax",
+      "best_value": 94,
+      "visited": 53,
+      "leaf_evals": 32,
+      "prunes": 0,
+      "pruned_children": 0,
+      "time_ms": 0.0043
+    },
+    {
+      "tree": "宽树 4×4×2",
+      "order": "从右到左",
+      "algorithm": "Alpha-Beta",
+      "best_value": 94,
+      "visited": 32,
+      "leaf_evals": 17,
+      "prunes": 5,
+      "pruned_children": 9,
+      "time_ms": 0.0082
+    }
+  ],
+  "treasure": {
+    "points": [
+      "A",
+      "B",
+      "T1",
+      "T2",
+      "T3",
+      "T4"
+    ],
+    "treasure_values": {
+      "T1": 9,
+      "T2": 6,
+      "T3": 7,
+      "T4": 7
+    },
+    "distance_matrix": [
+      [
+        0,
+        12,
+        10,
+        4,
+        8,
+        8
+      ],
+      [
+        12,
+        0,
+        8,
+        8,
+        4,
+        10
+      ],
+      [
+        10,
+        8,
+        0,
+        6,
+        6,
+        12
+      ],
+      [
+        4,
+        8,
+        6,
+        0,
+        6,
+        6
+      ],
+      [
+        8,
+        4,
+        6,
+        6,
+        0,
+        6
+      ],
+      [
+        8,
+        10,
+        12,
+        6,
+        6,
+        0
+      ]
+    ],
+    "results": [
+      {
+        "order": "T1→T2→T3→T4",
+        "depth": 2,
+        "algorithm": "Minimax",
+        "best_target": "T2",
+        "best_value": -1,
+        "visited": 17,
+        "leaf_evals": 12,
+        "prunes": 0,
+        "pruned_children": 0,
+        "time_ms": 0.0176
+      },
+      {
+        "order": "T1→T2→T3→T4",
+        "depth": 2,
+        "algorithm": "Alpha-Beta",
+        "best_target": "T2",
+        "best_value": -1,
+        "visited": 13,
+        "leaf_evals": 8,
+        "prunes": 2,
+        "pruned_children": 4,
+        "time_ms": 0.0175
+      },
+      {
+        "order": "T1→T2→T3→T4",
+        "depth": 4,
+        "algorithm": "Minimax",
+        "best_target": "T3",
+        "best_value": 3,
+        "visited": 65,
+        "leaf_evals": 24,
+        "prunes": 0,
+        "pruned_children": 0,
+        "time_ms": 0.0757
+      },
+      {
+        "order": "T1→T2→T3→T4",
+        "depth": 4,
+        "algorithm": "Alpha-Beta",
+        "best_target": "T3",
+        "best_value": 3,
+        "visited": 47,
+        "leaf_evals": 16,
+        "prunes": 5,
+        "pruned_children": 6,
+        "time_ms": 0.0599
+      },
+      {
+        "order": "T4→T3→T2→T1",
+        "depth": 2,
+        "algorithm": "Minimax",
+        "best_target": "T2",
+        "best_value": -1,
+        "visited": 17,
+        "leaf_evals": 12,
+        "prunes": 0,
+        "pruned_children": 0,
+        "time_ms": 0.0188
+      },
+      {
+        "order": "T4→T3→T2→T1",
+        "depth": 2,
+        "algorithm": "Alpha-Beta",
+        "best_target": "T2",
+        "best_value": -1,
+        "visited": 16,
+        "leaf_evals": 11,
+        "prunes": 1,
+        "pruned_children": 1,
+        "time_ms": 0.0206
+      },
+      {
+        "order": "T4→T3→T2→T1",
+        "depth": 4,
+        "algorithm": "Minimax",
+        "best_target": "T3",
+        "best_value": 3,
+        "visited": 65,
+        "leaf_evals": 24,
+        "prunes": 0,
+        "pruned_children": 0,
+        "time_ms": 0.0763
+      },
+      {
+        "order": "T4→T3→T2→T1",
+        "depth": 4,
+        "algorithm": "Alpha-Beta",
+        "best_target": "T3",
+        "best_value": 3,
+        "visited": 46,
+        "leaf_evals": 16,
+        "prunes": 4,
+        "pruned_children": 5,
+        "time_ms": 0.0605
+      },
+      {
+        "order": "价值优先 T1→T3→T4→T2",
+        "depth": 2,
+        "algorithm": "Minimax",
+        "best_target": "T2",
+        "best_value": -1,
+        "visited": 17,
+        "leaf_evals": 12,
+        "prunes": 0,
+        "pruned_children": 0,
+        "time_ms": 0.0198
+      },
+      {
+        "order": "价值优先 T1→T3→T4→T2",
+        "depth": 2,
+        "algorithm": "Alpha-Beta",
+        "best_target": "T2",
+        "best_value": -1,
+        "visited": 15,
+        "leaf_evals": 10,
+        "prunes": 1,
+        "pruned_children": 2,
+        "time_ms": 0.0184
+      },
+      {
+        "order": "价值优先 T1→T3→T4→T2",
+        "depth": 4,
+        "algorithm": "Minimax",
+        "best_target": "T3",
+        "best_value": 3,
+        "visited": 65,
+        "leaf_evals": 24,
+        "prunes": 0,
+        "pruned_children": 0,
+        "time_ms": 0.0758
+      },
+      {
+        "order": "价值优先 T1→T3→T4→T2",
+        "depth": 4,
+        "algorithm": "Alpha-Beta",
+        "best_target": "T3",
+        "best_value": 3,
+        "visited": 42,
+        "leaf_evals": 14,
+        "prunes": 6,
+        "pruned_children": 7,
+        "time_ms": 0.0565
+      }
+    ]
+  }
+}
